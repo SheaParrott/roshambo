@@ -1,39 +1,66 @@
 let POChoice = ''
 let PTChoice = ''
 
+let ChangeBackgroundImageToNone = () => {
+  let changeBackground = document.querySelector('Section')
+  changeBackground.classList.remove('JSWTMobile')
+}
+let ChangeWinnerDeclarationMargin = () => {
+  let winnerDecision = document.querySelector('h2')
+  winnerDecision.classList.add('winnerDeclarationMargin')
+}
 const winner = () => {
   let winnerDecision = document.querySelector('h2')
   if (POChoice === 'rock' && PTChoice === 'rock') {
-    winnerDecision.textContent = 'TIE!'
+    winnerDecision.textContent = 'TIE!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'paper' && PTChoice === 'paper') {
-    winnerDecision.textContent = 'TIE!'
+    winnerDecision.textContent = 'TIE!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'scissors' && PTChoice === 'scissors') {
-    winnerDecision.textContent = 'TIE!'
+    winnerDecision.textContent = 'TIE!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'rock' && PTChoice === 'paper') {
-    winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER'
+    winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'rock' && PTChoice === 'scissors') {
-    winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER'
+    winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'paper' && PTChoice === 'rock') {
-    winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER'
+    winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'paper' && PTChoice === 'scissors') {
-    winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER'
+    winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'scissors' && PTChoice === 'rock') {
-    winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER'
+    winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
   if (POChoice === 'scissors' && PTChoice === 'paper') {
-    winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER'
+    winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER!!'
+    ChangeBackgroundImageToNone()
+    ChangeWinnerDeclarationMargin()
   }
 }
 
 let PTHidden = () => {
   let x = document.getElementById('PTHidden')
+  let y = document.getElementById('JSWTHidden')
   if (x.style.display === 'none') {
     x.style.display = 'block'
   } else {

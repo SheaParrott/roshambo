@@ -6,16 +6,19 @@ body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 'POE';
-  text-shadow: white 2px 2px 45px;
+  text-shadow: white 0 0 32px;
   -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.7);
   opacity: 0.8;
+  background-image: linear-gradient(black, lightgrey);
 }
-.backGround {
-  height: 100vh;
-  background-image: url(https://vignette.wikia.nocookie.net/rifftrax/images/6/67/Pirates.jpg/revision/latest?cb=20140821143654);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+.changeBackgroundImage {
+ background-attachment: fixed;
+ background-position: center;
+}
+
+.JSWTMobile {
+  background-image: url(./assets/JSWT.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -26,16 +29,37 @@ body {
 h1 {
   margin: 0.01px;
   padding: 10px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
   text-decoration: underline black;
+  background-color: black;
+  border: dashed 2px grey;
 }
+.winnerDeclarationMargin {
+  margin: 20%;
+}
+
 h2 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   text-align: center;
+  margin: 0px;
+  background: lightgrey;
+  border-radius: 15px;
+  margin-left: 15%;
+  margin-right: 15%;
+  opacity: 0.7;
+  border: 1px solid black;
+  box-shadow: 0 0 15px black;
 }
 h3 {
-  font-size: 1rem;
+  background: lightgrey;
+  border-radius: 4px;
+  padding: 5px;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 0 0 15px black;
 }
 main {
   display: flex;
@@ -66,6 +90,7 @@ button {
   border: black solid 1px;
   box-shadow: white 2px 2px 15px;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 .rock:hover,
@@ -79,21 +104,191 @@ button {
   display: none;
 }
 
-.RB {
+.ResetButton {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+.blackPearl {
+  width: 250px;
+  height: auto;
+}
+footer {
+  width: 100vw;
+  background: black;
+  position: fixed;
+  bottom: 0px;
+  border: black solid 5px;
+  font-size: 0.6rem;
+  text-align: center;
+}
+.blackPearlFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 320px) {
-  .backGround {
-  }
+@media (min-width: 370px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
+  .blackPearl {
+    width: 375px;
+    height: auto;
+  }
+  button {
+    font-size: 1.3rem;
+  }
+  @media (min-width: 410px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+    }
+    .blackPearl {
+      width: 350px;
+      height: auto;
+    }
+    button {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 490px) {
+    .ResetButton {
+      margin: 6%
+    }
+  }
+  @media (min-width: 640px) {
+    .JSWTMobile {
+      background-image: url(./assets/JSWT.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    h1 {
+      font-size: 4.7rem;
+    }
+    h2 {
+      font-size: 2.8rem;
+    }
+    h3 {
+      font-size: 2.1rem;
+    }
+    .blackPearl {
+      width: 460px;
+      height: auto;
+    }
+    button {
+      font-size: 1.7rem;
+    }
+    .ResetButton {
+      margin: 8%
+    }
+  }
+  @media (min-width: 750px) {
+  .ResetButton {
+    margin: 9% 
+  }
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2.7rem;
+    }
+    .blackPearl {
+      width: 375px;
+      height: auto;
+    }
+    button {
+      font-size: 2rem;
+    }
+    footer {
+      font-size: .9rem;
+    }
+}
+@media (min-width: 1000px) {
+  .ResetButton {
+    margin: 10%
+  }
+  .ResetButton {
+    margin: 10% 
+  }
+    h1 {
+      font-size: 7rem;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    h3 {
+      font-size: 3.5rem;
+    }
+    .blackPearl {
+      width: 400px;
+      height: auto;
+    }
+    button {
+      font-size: 3.3rem;
+    }
+    footer {
+      font-size: 1.2rem;
+    }
+}
+@media (min-width: 1200px) {
+  .ResetButton {
+    margin: 10%
+  }
+    h1 {
+      font-size: 5rem;
+    }
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2.5rem;
+    }
+    .blackPearl, 
+    .blackPearlFlex {
+    display: none;
+    }
+    button {
+      font-size: 2.5rem;
+    }
+    footer {
+      font-size: 1rem;
+    }
+}
+@media (min-width: 1350px) {
+  .ResetButton {
+    margin: 15% 
+  }
+}
+@media (min-width: 1890px) {
+    h1 {
+      font-size: 7rem;
+    }
+    h2 {
+      font-size: 4.5rem;
+    }
+    h3 {
+      font-size: 3.7rem;
+    }
+    button {
+      font-size: 2.5rem;
+    }
+    footer {
+      font-size: 1.5rem;
+    }
 }
