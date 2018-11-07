@@ -1,5 +1,5 @@
-let POChoice = ''
-let PTChoice = ''
+let PlayerOneChoice = ''
+let PlayerTwoChoice = ''
 
 let ChangeBackgroundImageToNone = () => {
   let changeBackground = document.querySelector('Section')
@@ -11,56 +11,55 @@ let ChangeWinnerDeclarationMargin = () => {
 }
 const winner = () => {
   let winnerDecision = document.querySelector('h2')
-  if (POChoice === 'rock' && PTChoice === 'rock') {
+  if (PlayerOneChoice === 'rock' && PlayerTwoChoice === 'rock') {
     winnerDecision.textContent = 'TIE!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'paper' && PTChoice === 'paper') {
+  if (PlayerOneChoice === 'paper' && PlayerTwoChoice === 'paper') {
     winnerDecision.textContent = 'TIE!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'scissors' && PTChoice === 'scissors') {
+  if (PlayerOneChoice === 'scissors' && PlayerTwoChoice === 'scissors') {
     winnerDecision.textContent = 'TIE!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'rock' && PTChoice === 'paper') {
+  if (PlayerOneChoice === 'rock' && PlayerTwoChoice === 'paper') {
     winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'rock' && PTChoice === 'scissors') {
+  if (PlayerOneChoice === 'rock' && PlayerTwoChoice === 'scissors') {
     winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'paper' && PTChoice === 'rock') {
+  if (PlayerOneChoice === 'paper' && PlayerTwoChoice === 'rock') {
     winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'paper' && PTChoice === 'scissors') {
+  if (PlayerOneChoice === 'paper' && PlayerTwoChoice === 'scissors') {
     winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'scissors' && PTChoice === 'rock') {
+  if (PlayerOneChoice === 'scissors' && PlayerTwoChoice === 'rock') {
     winnerDecision.textContent = 'ALAS, WILL TURNER BE THE WINNER!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
-  if (POChoice === 'scissors' && PTChoice === 'paper') {
+  if (PlayerOneChoice === 'scissors' && PlayerTwoChoice === 'paper') {
     winnerDecision.textContent = 'ALAS, JACK SPARROW BE THE WINNER!!'
     ChangeBackgroundImageToNone()
     ChangeWinnerDeclarationMargin()
   }
 }
 
-let PTHidden = () => {
-  let x = document.getElementById('PTHidden')
-  let y = document.getElementById('JSWTHidden')
+let PlayerTwoHidden = () => {
+  let x = document.getElementById('PlayerTwoHidden')
   if (x.style.display === 'none') {
     x.style.display = 'block'
   } else {
@@ -68,8 +67,8 @@ let PTHidden = () => {
   }
 }
 
-let POHidden = () => {
-  let x = document.getElementById('POHidden')
+let PlayerOneHidden = () => {
+  let x = document.getElementById('PlayerOneHidden')
   if (x.style.display === 'none') {
     x.style.display = 'block'
   } else {
@@ -77,40 +76,40 @@ let POHidden = () => {
   }
 }
 
-const PORock = () => {
-  POChoice = 'rock'
+const PlayerOneRock = () => {
+  PlayerOneChoice = 'rock'
   winner()
-  POHidden()
+  PlayerOneHidden()
 }
 
-const PTRock = () => {
-  PTChoice = 'rock'
+const PlayerTwoRock = () => {
+  PlayerTwoChoice = 'rock'
   winner()
-  PTHidden()
+  PlayerTwoHidden()
 }
 
-const POPaper = () => {
-  POChoice = 'paper'
+const PlayerOnePaper = () => {
+  PlayerOneChoice = 'paper'
   winner()
-  POHidden()
+  PlayerOneHidden()
 }
 
-const PTPaper = () => {
-  PTChoice = 'paper'
+const PlayerTwoPaper = () => {
+  PlayerTwoChoice = 'paper'
   winner()
-  PTHidden()
+  PlayerTwoHidden()
 }
 
-const POScissors = () => {
-  POChoice = 'scissors'
+const PlayerOneScissors = () => {
+  PlayerOneChoice = 'scissors'
   winner()
-  POHidden()
+  PlayerOneHidden()
 }
 
-const PTScissors = () => {
-  PTChoice = 'scissors'
+const PlayerTwoScissors = () => {
+  PlayerTwoChoice = 'scissors'
   winner()
-  PTHidden()
+  PlayerTwoHidden()
 }
 
 const RSB = () => {
@@ -134,17 +133,17 @@ const main = () => {
 
   resetButton.addEventListener('click', RSB)
 
-  playerOneRock.addEventListener('click', PORock)
+  playerOneRock.addEventListener('click', PlayerOneRock)
 
-  playerTwoRock.addEventListener('click', PTRock)
+  playerTwoRock.addEventListener('click', PlayerTwoRock)
 
-  playerOnePaper.addEventListener('click', POPaper)
+  playerOnePaper.addEventListener('click', PlayerOnePaper)
 
-  playerTwoPaper.addEventListener('click', PTPaper)
+  playerTwoPaper.addEventListener('click', PlayerTwoPaper)
 
-  playerOneScissors.addEventListener('click', POScissors)
+  playerOneScissors.addEventListener('click', PlayerOneScissors)
 
-  playerTwoScissors.addEventListener('click', PTScissors)
+  playerTwoScissors.addEventListener('click', PlayerTwoScissors)
 }
 
 document.addEventListener('DOMContentLoaded', main)
