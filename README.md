@@ -2,6 +2,9 @@
 In this assignment we were instructed to create ROSHAMBO, aka rock paper scissors using javascript.    
 
 <strong>Things learned</strong><br/>
+use of an assets folder to add images<br/>
+getting into the mindset to create logic for a game<br/>
+
 expanded my knowledge into CSS<br/>
   - border radius <br/>
   - text-align <br/>
@@ -17,11 +20,8 @@ javascript<br/>
  - how to call a function<br/>
  - small dive into truthy and falsey<br/>
  - classList.add <br/>
+ - my choice of a reset button, reloading the page with window.location.reload(true)<br/>
  
-use of an assets folder to add images<br/>
-getting into the mindset to create logic for a game<br/>
-how to add and remove class's using javascript<br/>
-my choice of a reset button, reloading the page with window.location.reload(true)<br/>
 
 <strong>Technologies Used</strong><br/>
 HTML<br/>
