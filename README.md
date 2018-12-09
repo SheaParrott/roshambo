@@ -17,6 +17,7 @@ javascript<br/>
  - how to call a function<br/>
  - small dive into truthy and falsey<br/>
  - classList.add <br/>
+ 
 use of an assets folder to add images<br/>
 getting into the mindset to create logic for a game<br/>
 how to add and remove class's using javascript<br/>
