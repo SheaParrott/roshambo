@@ -12,6 +12,7 @@ expanded my knowledge into CSS<br/>
   - text-shadow <br/>
   - opacity <br/>
   - linear-gradient for my background <br/>
+  - @fontface to add in custom fonts<br/>
 
 javascript<br/>
  - add event listeners<br/>
